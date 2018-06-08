@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$1" != "" ];
+if ! [ -z "$1" ];
 then
     echo "Hello, $1!"
 else
