@@ -1,5 +1,5 @@
 #!bin/bash
-if [ "$#" == 2 ];
+if [ "$#" -eq 2 ];
 then
   echo $2 | cut -d"/" -f 2
   grep  -n $1 $2 | cut --delimiter=':' -f 1
