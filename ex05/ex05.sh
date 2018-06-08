@@ -8,7 +8,7 @@ count=$#
 while test ${#} -gt 0
 do
   str+='+'$1
-  if  [ $1 == "-e" ]; then
+  if ! [[ $1 =~ [[:digit:]] ]]; then
     echo "Error.."
     exit 1
   fi
