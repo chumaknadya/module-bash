@@ -1,7 +1,6 @@
 #!bin/bash
 file=$1
 if ! [ -f "$file" ];then
-  echo ""
   exit 1
 fi
 while [ $# -gt 0 ]
