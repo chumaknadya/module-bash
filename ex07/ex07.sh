@@ -3,11 +3,7 @@ file="resourses/surnames.txt"
 count=0
 arg=$1
 re='Q-Chem'
-if ! [[ $arg ]]; then
-  exit 1
-fi
-
-if [[ $arg == 0  ]];then
+if ! [[ $arg ]] || [[ $arg -eq 0 ]]; then
   exit 1
 fi
 while IFS= read line
